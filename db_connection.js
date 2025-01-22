@@ -1,10 +1,10 @@
 const mysql = require('mysql2');
 
-// Update these values with your MySQL credentials
+// Update with your MySQL credentials
 const connection = mysql.createConnection({
     host: 'localhost',
-    user: 'root',            // Replace with your MySQL username
-    password: 'system',            // Replace with your MySQL password (leave empty if no password is set)
+    user: 'root',
+    password: 'system', // Replace with your actual password
     database: 'student_absence_management'
 });
 

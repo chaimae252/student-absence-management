@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Absence Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <img src="your-image.jpg" alt="Image" class="image">
+            <button id="load-data-btn" class="btn">Load Data</button>
+        </div>
+    </div>
+
+    <script>
+        // Fetch data from the database when the button is clicked
+        document.getElementById('load-data-btn').addEventListener('click', function() {
+            fetch('/load-data')
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);  // You can process the data as needed
+                    alert('Data Loaded: ' + JSON.stringify(data));
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Error loading data');
+                });
+        });
+    </script>
+</body>
+</html>
