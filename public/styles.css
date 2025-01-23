@@ -3,29 +3,21 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background: url('your-image.jpg') no-repeat center center fixed;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  color: #fff; /* White text for contrast */
 }
 
 .container {
   text-align: center;
-}
-
-.content {
-  position: relative;
-  display: inline-block;
-  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.image {
-  width: 300px;
-  height: auto;
-  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .btn {
@@ -36,6 +28,7 @@ body {
   cursor: pointer;
   font-size: 16px;
   border-radius: 5px;
+  margin-top: 20px;
 }
 
 .btn:hover {
