@@ -5,7 +5,8 @@ const connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: 'system', // Replace with your actual password
-    database: 'student_absence_management'
+    database: 'student_absence_management',
+    port: 3308
 });
 
 // Connect to the database
