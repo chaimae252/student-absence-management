@@ -35,11 +35,13 @@
             formData.append('excelFile', file);
 
             try {
+                // Use fetch to send the formData
                 const response = await fetch('/upload', {
                     method: 'POST',
                     body: formData,
                 });
 
+                // Handle server response
                 const result = await response.json();
                 if (response.ok) {
                     statusMessage.textContent = `File uploaded successfully: ${result.message}`;
