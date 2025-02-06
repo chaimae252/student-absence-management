@@ -130,3 +130,24 @@ FOREIGN KEY (nom_niveau) REFERENCES Niveaux (nom_niveau);
 
 ALTER TABLE Niveaux ADD UNIQUE KEY (nom_filiere, nom_niveau, annee_universitaire);
 ALTER TABLE Filieres ADD UNIQUE KEY (nom_filiere);
+
+ALTER TABLE Etudiants
+ADD COLUMN password VARCHAR(255) NOT NULL;
+
+
+CREATE TABLE Admins (
+    id_admin INT PRIMARY KEY AUTO_INCREMENT,
+    nom VARCHAR(100) NOT NULL,
+    prenom VARCHAR(100) NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL
+);
+CREATE TABLE Enseignants (
+    id_enseignant INT PRIMARY KEY AUTO_INCREMENT,
+    nom VARCHAR(100) NOT NULL,
+    prenom VARCHAR(100) NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    nom_filiere VARCHAR(100) NOT NULL,
+    FOREIGN KEY (nom_filiere) REFERENCES Filieres(nom_filiere) ON DELETE CASCADE
+);
