@@ -1,0 +1,104 @@
+.auth-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-image: url("C:\Users\chaim\student-absence-management\login-register\public\images\your-image.jpg"); /* Correct path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: brightness(60%);
+    overflow: hidden;
+    margin-top: -40px;
+  }
+  
+  body {
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  .blur-frame {
+    backdrop-filter: blur(20px); /* Blur effect */
+    -webkit-backdrop-filter: blur(20px); /* Safari support */
+    background: rgba(0, 0, 0, 0.30); /* Semi-transparent white */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    text-align: center;
+    animation: fadeInUp 1.2s ease-in-out;
+  }
+  
+ .hh {
+    font-size: 42px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 15px;
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    animation: fadeInUp 1.5s ease-in-out;
+  }
+  
+  .par {
+    font-size: 20px;
+    color: #f0f0f0;
+    margin-bottom: 25px;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    animation: fadeInUp 1.7s ease-in-out;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .auth-button {
+    padding: 14px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .auth-button.teacher {
+    background: linear-gradient(135deg, #ff4e50, #fc913a); /* Red-Orange */
+  }
+  
+  .auth-button.student {
+    background: linear-gradient(135deg, #36d1dc, #5b86e5); /* Cyan-Blue */
+  }  
+  
+  .auth-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .auth-button:active {
+    transform: scale(0.98);
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

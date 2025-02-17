@@ -1,2 +1,0 @@
-# student-absence-management
-hey

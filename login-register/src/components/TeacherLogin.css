@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;600;700&display=swap');
+.container{
+  font-family: "Poppins", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("C:\Users\chaim\student-absence-management\login-register\public\images\your-image.jpg");
+}
+.Wrapper{
+    position: relative;
+    width: 450px;
+    height: 420px;
+    border-radius: 10px;
+    color: #fff;
+    backdrop-filter: blur(20px); /* Blur effect */
+    -webkit-backdrop-filter: blur(20px); /* Safari support */
+    background: rgba(0, 0, 0, 0.30); /* Semi-transparent white */
+}
+.Wrapper .form-box {
+    width: 100%;
+    padding: 40px;
+}
+form h1{
+    font-size: 36px;
+    margin-left: 50px;
+}
+form .input-box {
+    position: relative;
+    width: 82%;
+    height: 50px;
+    margin: 30px 0;
+}
+.input-box input {
+    width: 98%;
+    height: 90%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.756);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding-left: 20px;
+}
+.input-box input::placeholder{
+    color: #fff;
+}
+.input-box .icon{
+    position: absolute;
+    right: 2px;
+    top: 50%;
+    translate: 0 -50%;
+    font-size: 16px;
+}
+form .remember-forgot {
+    display: flex;
+    gap: 120px;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+.remember-forgot label input {
+    accent-color: #fff;
+    margin-right: 4px;  
+}
+.remember-forgot a {
+    color: #fff;
+    text-decoration: none;
+}
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+form button {
+    width: 85%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 700;
+}
+form .activate-link {
+    font-size: 14.5px;
+    align-items: center;
+    margin: 2Opx 0 15px;
+    margin-left: 73px;
+}
+.activate-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+.activate-link p a:hover {
+    text-decoration: underline;
+}
