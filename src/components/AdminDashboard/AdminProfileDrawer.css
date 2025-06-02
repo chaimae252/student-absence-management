@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Raleway:wght@300;500&display=swap');
+
+.drawer {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 420px;
+  height: 100%;
+  background-color: #ffffff;
+  box-shadow: -8px 0 25px rgba(0, 0, 0, 0.1);
+  transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: 'Montserrat', sans-serif;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.drawer.show {
+  right: 0;
+}
+
+.drawer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.8rem;
+  border-bottom: 1px solid #e0e0e0;
+  background: linear-gradient(135deg, #f7f9fc, #eef1f6);
+  border-top-left-radius: 1rem;
+}
+
+.drawer-header h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #222;
+  margin: 0;
+}
+
+.drawer-header button {
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: #888;
+  transition: color 0.3s ease;
+}
+
+.drawer-header button:hover {
+  color: #007bff;
+}
+
+.drawer-body {
+  padding: 2.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  overflow-y: auto;
+}
+
+.profile-picture {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 50%;
+  align-self: center;
+  margin-bottom: 1.5rem;
+  border: 3px solid #dee2e6;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.drawer-body input[type="text"],
+.drawer-body input[type="emaiil"],
+.drawer-body input[type="passworrd"],
+.drawer-body input[type="file"] {
+  padding: 0.85rem 1.1rem;
+  font-size: 1rem;
+  border-radius: 1rem;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.drawer-body input:focus {
+  outline: none;
+  border-color: #007bff;
+  background-color: #fff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.drawer-body h3 {
+  text-align: center;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #222;
+  font-family: 'Raleway', sans-serif;
+}
+
+.drawer-body .pp {
+  text-align: center;
+  color: #777;
+  font-size: 0.95rem;
+  margin-top: -0.5rem;
+}
+
+.drawer-body .role {
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #007bff;
+  margin-bottom: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.primary {
+  background-color: #007bff;
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-family: 'Montserrat', sans-serif;
+  box-shadow: 0 6px 12px rgba(0, 123, 255, 0.2);
+}
+
+.primary:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.logout {
+  background-color: #f8f9fa;
+  color: #333;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.logout:hover {
+  background-color: #e2e6ea;
+  transform: translateY(-1px);
+}

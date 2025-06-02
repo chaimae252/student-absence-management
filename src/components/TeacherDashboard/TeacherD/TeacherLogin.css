@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Raleway:wght@300;500&display=swap');
+
+/* Container background */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #e0e7ff, #f0fdf4);
+  font-family: 'Montserrat', sans-serif;
+  padding: 20px;
+}
+
+/* Frosty glass effect */
+.Wrapper {
+  margin-top: -80px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  border-radius: 18px;
+  padding: 50px 40px;
+  max-width: 480px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  border-left: 6px solid #8b5cf6;
+  text-align: center;
+}
+
+/* Form title */
+.form-box.login h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 25px;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Input fields */
+.input-box {
+  position: relative;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 0.9rem 1.5rem 0.9rem 2.5rem; /* Added right padding */
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: #f9fafb;
+  font-family: 'Montserrat', sans-serif;
+  transition: all 0.3s ease;
+  box-sizing: border-box; /* ensures padding doesn’t overflow the box */
+}
+
+
+.input-box input:focus {
+  outline: none;
+  border-color: #8b5cf6;
+  background-color: #fff;
+}
+
+/* icoon style */
+.icoon {
+  position: absolute;
+  top: 50%;
+  left: 0.75rem;
+  transform: translateY(-50%);
+  color: #94a3b8;
+  font-size: 1rem;
+}
+.icoon {
+  color: #94a3b8;
+}
+
+.icoon path {
+  fill: currentColor !important;
+  stroke: currentColor !important;
+}
+
+/* Remember and forgot section */
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.forgot {
+  margin-left: auto;
+  color: #8b5cf6;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.forgot:hover {
+  text-decoration: underline;
+  color: #7c3aed;
+}
+
+/* Submit button */
+button[type="submit"] {
+  background: linear-gradient(to right, #3b82f6, #8b5cf6);
+  color: white;
+  padding: 0.9rem 2rem;
+  width: auto;
+  min-width: 150px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+  box-shadow: 0 6px 18px rgba(139, 92, 246, 0.3);
+  margin: 1rem auto 0;
+  display: block;
+}
+
+
+button[type="submit"]:hover {
+  transform: scale(1.03);
+  background: linear-gradient(to right, #6366f1, #7c3aed);
+  box-shadow: 0 8px 24px rgba(124, 58, 237, 0.4);
+}
+
+/* Admin link */
+.activate-link {
+  font-size: 0.95rem;
+  color: #334155;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.activate-link a {
+  color: #8b5cf6;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.activate-link a:hover {
+  color: #7c3aed;
+  text-decoration: underline;
+}
+.activate-link .A {
+  color: #8b5cf6;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.activate-link .A:hover {
+  color: #7c3aed;
+  text-decoration: underline;
+}

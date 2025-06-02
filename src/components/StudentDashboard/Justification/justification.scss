@@ -1,0 +1,210 @@
+.justificationPage {
+  display: flex;
+  margin-left: 45px;
+  background-color: #fafafa;
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+
+  .contentt {
+    flex: 1;
+    padding: 2rem 3rem;
+    margin-left: 250px; // sidebar width to avoid overlap
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+
+    h2 {
+      font-weight: 700;
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      color: #0c3765; // same accent blue from sidebar hover
+    }
+
+    .loading,
+    .error-message,
+    .no-data {
+      font-size: 1.1rem;
+      color: #666;
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    .justification-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 2rem;
+      font-size: 1rem;
+
+      th, td {
+        padding: 12px 18px;
+        border-bottom: 1px solid #e0e0e0;
+        text-align: left;
+      }
+
+      thead {
+        background-color: #f0f0f0;
+        font-weight: 600;
+        color: #555;
+      }
+
+      tbody tr {
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #e6f0ff; // subtle light blue on hover
+        }
+      }
+    }
+
+    .add-justification-section {
+      display: flex;
+      justify-content: flex-end;
+
+      .add-justification-btn {
+        background-color: #072b52;
+        color: white;
+        padding: 0.6rem 1.2rem;
+        border: none;
+        border-radius: 8px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #054386;
+        }
+      }
+    }
+  }
+
+  // Modal styles
+  .add-justification-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    visibility: visible;
+    z-index: 150;
+
+    &.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .modal-content {
+      background-color: #fff;
+      padding: 2rem 2.5rem;
+      border-radius: 15px;
+      width: 420px;
+      max-width: 90vw;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      position: relative;
+
+      h3 {
+        font-weight: 700;
+        margin-bottom: 1.2rem;
+        color: #08478b;
+      }
+
+      .close-btn {
+        position: absolute;
+        top: 12px;
+        right: 15px;
+        background: none;
+        border: none;
+        font-size: 1.6rem;
+        cursor: pointer;
+        color: #777;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: #007bff;
+        }
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+
+        .form-group {
+          margin-bottom: 1rem;
+
+          label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+            color: #444;
+          }
+
+          select, textarea {
+            width: 100%;
+            padding: 0.5rem 0.75rem;
+            font-size: 1rem;
+            border: 1.5px solid #ccc;
+            border-radius: 8px;
+            transition: border-color 0.3s ease;
+
+            &:focus {
+              outline: none;
+              border-color: #0b3767;
+            }
+          }
+
+          textarea {
+            resize: vertical;
+            min-height: 90px;
+            font-family: 'Montserrat', sans-serif;
+          }
+        }
+
+        .form-message {
+          color: #d9534f; // red-ish error or info
+          font-weight: 600;
+          margin-bottom: 1rem;
+          text-align: center;
+        }
+
+        .form-actions {
+          display: flex;
+          justify-content: flex-end;
+          gap: 1rem;
+
+          button {
+            padding: 0.5rem 1.2rem;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+            transition: background-color 0.3s ease;
+
+            &.cancel-button {
+              background-color: #ddd;
+              color: #555;
+
+              &:hover {
+                background-color: #ccc;
+              }
+            }
+
+            &.submit-button {
+              background-color: #007bff;
+              color: #fff;
+
+              &:hover {
+                background-color: #0056b3;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

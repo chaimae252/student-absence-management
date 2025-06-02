@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Raleway:wght@300;500&display=swap');
+
+.activate-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #e0e7ff, #f0fdf4);
+  font-family: 'Montserrat', sans-serif;
+  padding: 20px;
+}
+
+/* Frosty glass wrapper */
+.Wrappper {
+  margin-top: -80px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  border-radius: 18px;
+  padding: 50px 40px;
+  max-width: 480px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  border-left: 6px solid #3b82f6; /* Blue like dashboard stats */
+  text-align: center;
+}
+
+/* Headings and text */
+.Wrappper h2 {
+  font-size: 1.8rem;
+  color: #1e293b;
+  margin-bottom: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.Wrappper p {
+  font-size: 1rem;
+  color: #475569;
+  margin-bottom: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Email input */
+.Wrappper input[type="email"] {
+  width: 100%;
+  padding: 0.9rem 1.5rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: #f9fafb;
+  font-family: 'Montserrat', sans-serif;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  margin-bottom: 1.5rem;
+}
+
+.Wrappper input[type="email"]:focus {
+  outline: none;
+  border-color: #3b82f6;
+  background-color: #fff;
+}
+
+/* Submit button */
+.Wrappper button {
+  background: linear-gradient(to right, #3b82f6, #8b5cf6);
+  color: white;
+  padding: 0.9rem 2rem;
+  width: auto;
+  min-width: 150px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+  box-shadow: 0 6px 18px rgba(139, 92, 246, 0.3);
+  margin: 0 auto;
+  display: block;
+}
+
+.Wrappper button:hover {
+  transform: scale(1.03);
+  background: linear-gradient(to right, #6366f1, #7c3aed);
+  box-shadow: 0 8px 24px rgba(124, 58, 237, 0.4);
+}
+
+/* Activation success message */
+.Wrappper p:last-child {
+  margin-top: 15px;
+  color: #059669;
+  font-weight: 500;
+}

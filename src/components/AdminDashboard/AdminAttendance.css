@@ -1,0 +1,270 @@
+.admin-attendance {
+  display: flex;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f9fafb;
+  margin-left: -30px;
+}
+
+.attendance-container {
+  padding: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: -30px;
+  height: 100%;
+  overflow-y: inherit;
+  flex: 1;
+}
+
+/* Header */
+.attendance-container .conten-header {
+  margin-bottom: 20px;
+}
+
+.conten-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heade-title h2 {
+  font-size: 1.5rem;
+  color: #1e293b;
+  margin: 0;
+}
+
+.header-subtitle {
+  font-size: 0.95rem;
+  color: #64748b;
+  margin-top: 5px;
+}
+
+/* Selection Card */
+.selection-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+
+.car-header h3 {
+  font-size: 1.2rem;
+  color: #1e293b;
+  margin-bottom: 10px;
+}
+
+.filters-container {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 180px;
+}
+
+.select-input {
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  background-color: #fff;
+  color: #1e293b;
+}
+
+.primary-button {
+  background-color: #3b82f6;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.primary-button:hover {
+  background-color: #2563eb;
+}
+
+/* Alerts */
+.alert {
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+}
+
+.alert-error {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+
+.alert-success {
+  background-color: #d1fae5;
+  color: #047857;
+}
+
+/* Student List */
+.student-list-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.card-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.date-picker-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.date-input {
+  padding: 8px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.submit-button {
+  background-color: #10b981;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #059669;
+}
+
+/* Table */
+.students-table-container {
+  width: 100%;
+  overflow-x: auto; /* allow scrolling if needed */
+  margin-top: 1rem;
+  padding-right: 1rem;
+  box-sizing: border-box;
+}
+
+
+.students-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  table-layout: auto; /* allow natural sizing */
+}
+
+
+.students-table th,
+.students-table td {
+  padding: 0.7rem;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+  word-wrap: break-word;
+  white-space: normal;
+  /* REMOVE max-width */
+}
+
+
+
+
+.students-table th {
+  background-color: #f1f5f9;
+  color: #1e293b;
+}
+
+.absent-row {
+  background-color: #fef3c7;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.justification-input {
+  padding: 8px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  width: 100%;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+  min-width: 0;
+  white-space: normal;
+  max-width: 100%;
+}
+.hours-input {
+  padding: 8px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  width: 100%;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+  min-width: 0;
+  max-width: 100%;
+}
+/* Pagination */
+.pagination-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem auto 0 auto;
+}
+
+.pagination-button {
+  padding: 8px 12px;
+  border: 1px solid #cbd5e1;
+  background-color: #fff;
+  color: #1e293b;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination-button:hover {
+  background-color: #e2e8f0;
+}
+
+.pagination-button.active {
+  background-color: #3b82f6;
+  color: white;
+  font-weight: 600;
+}
+
+/* Utility classes */
+.ml-4 {
+  margin-left: 1rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}

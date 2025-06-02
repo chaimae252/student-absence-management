@@ -1,0 +1,71 @@
+.injection {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .card {
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+    border: 1px solid #eaeaea;
+    overflow: hidden; /* This prevents inner scrollbars */
+  }
+  
+  .card-header {
+    margin-bottom: 1.5rem;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    color: #1e1e2f;
+    margin: 0;
+    font-weight: 600;
+  }
+  
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow: hidden; /* make sure nothing scrolls inside */
+  }
+  
+  .file-input {
+    border: 1px solid #ccc;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    background-color: #fafafa;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s ease;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .file-input:focus {
+    border-color: #6366f1;
+  }
+  
+  .primary-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    background-color: #6366f1;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .primary-button:hover {
+    background-color: #4f46e5;
+  }
+  

@@ -1,0 +1,215 @@
+
+.account-section {
+  background-color: white;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.account-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.account-header h2 {
+  font-size: 1.5rem;
+  margin: 0;
+  color: #1e293b;
+}
+
+.edit-profile-btn {
+  padding: 8px 16px;
+  background-color: #6E59A5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.edit-profile-btn:hover {
+  background-color: #5d4a8a;
+}
+
+.account-details {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.account-avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.avatar-placeholder {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  color: #64748b;
+}
+
+.account-avatar h3 {
+  font-size: 1.2rem;
+  margin: 5px 0;
+  color: #1e293b;
+}
+
+.account-avatar p {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin: 0;
+}
+
+.account-info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.info-group h4 {
+  font-size: 1rem;
+  color: #1e293b;
+  margin: 0 0 15px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.info-item {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+  align-items: flex-start;
+}
+
+.info-item svg {
+  color: #6E59A5;
+  margin-top: 3px;
+}
+
+.info-label {
+  font-size: 0.8rem;
+  color: #64748b;
+  margin: 0 0 2px 0;
+}
+
+.info-value {
+  font-size: 0.95rem;
+  color: #1e293b;
+  margin: 0;
+}
+
+.class-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.class-badge {
+  background-color: #f1edfc;
+  color: #6E59A5;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  display: inline-block;
+}
+
+@media (min-width: 768px) {
+  .account-details {
+    grid-template-columns: 1fr 3fr;
+  }
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+}
+
+.edit-modal {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 400px;
+  position: relative;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  animation: fadeIn 0.3s ease;
+}
+
+.edit-modal h3 {
+  margin-bottom: 1rem;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.edit-modal label {
+  display: block;
+  margin-top: 0.75rem;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.edit-modal input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.save-btn {
+  margin-top: 1.5rem;
+  padding: 10px 16px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.edit-modal select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+
+.edit-modal option {
+  font-family: 'Raleway', sans-serif;
+  color: #333;
+}
+
+.save-btn:hover {
+  background-color: #357abd;
+}
+
+.close-modal {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
